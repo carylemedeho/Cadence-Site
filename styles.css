@@ -91,13 +91,12 @@ body {
 
 /* ---------- language toggle ---------- */
 
-[data-lang] {
+/* Hide the language that is not active, rather than hiding both and reviving one.
+   Reviving with `display: revert` discarded author rules such as `.back` and
+   `.footlinks a`, which set their own display and won on specificity. */
+body[data-active="fr"] [data-lang]:not([data-lang="fr"]),
+body[data-active="en"] [data-lang]:not([data-lang="en"]) {
   display: none;
-}
-
-body[data-active="fr"] [data-lang="fr"],
-body[data-active="en"] [data-lang="en"] {
-  display: revert;
 }
 
 .langbar {
@@ -394,6 +393,7 @@ footer {
 .footlinks {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   gap: 4px 22px;
   margin-bottom: 18px;
 }
