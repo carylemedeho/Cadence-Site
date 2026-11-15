@@ -423,3 +423,39 @@ footer p {
   outline-offset: 3px;
   border-radius: 4px;
 }
+
+.invite ol {
+  margin: 0 0 var(--section-gap);
+  padding-left: 1.25em;
+  color: var(--ink-muted);
+}
+
+.invite li {
+  margin-bottom: 8px;
+}
+
+.copy {
+  min-height: var(--tap);
+  padding: 0 22px;
+  border: 0;
+  border-radius: var(--radius-chip);
+  background: var(--accent);
+  color: var(--on-accent);
+  font: 600 16px var(--sans);
+  box-shadow: var(--shadow-action);
+  cursor: pointer;
+  transition: opacity var(--fast) var(--ease-out);
+}
+
+.copy:active {
+  opacity: 0.85;
+}
+
+.copied,
+.missing {
+  color: var(--ink-muted);
+}
+
+[hidden] {
+  display: none !important;
+}
