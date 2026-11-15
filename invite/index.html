@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<meta name="referrer" content="no-referrer">
+<title>Cadentia — Invitation</title>
+<meta name="description" content="Quelqu’un vous invite à vous entraîner ensemble sur Cadentia.">
+<meta name="theme-color" content="#f3eee7" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#14110e" media="(prefers-color-scheme: dark)">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css?v=3">
+</head>
+<body data-active="fr">
+
+<div class="wrap">
+  <nav class="langbar" aria-label="Langue / Language">
+    <button type="button" data-set="fr" aria-pressed="true">FR</button>
+    <button type="button" data-set="en" aria-pressed="false">EN</button>
+  </nav>
+</div>
+
+<main>
+  <div class="wrap prose">
+    <a class="back" href="../index.html">← Cadentia</a>
+
+    <h1 data-lang="fr">Une invitation à s’entraîner ensemble</h1>
+    <h1 data-lang="en">An invitation to train together</h1>
+
+    <p class="lead" data-lang="fr">Quelqu’un vous propose de partager un pacte hebdomadaire sur Cadentia. Rien ne se passe tant que vous n’avez pas accepté dans l’application.</p>
+    <p class="lead" data-lang="en">Someone is offering to share a weekly pact with you on Cadentia. Nothing happens until you accept inside the app.</p>
+
+    <div class="invite" hidden>
+      <ol data-lang="fr">
+        <li>Copiez l’invitation avec le bouton ci-dessous.</li>
+        <li>Ouvrez Cadentia, puis Entraînement à deux.</li>
+        <li>Collez l’invitation et acceptez.</li>
+      </ol>
+      <ol data-lang="en">
+        <li>Copy the invitation with the button below.</li>
+        <li>Open Cadentia, then Train with a partner.</li>
+        <li>Paste the invitation and accept.</li>
+      </ol>
+
+      <button type="button" class="copy" data-copy>
+        <span data-lang="fr">Copier l’invitation</span>
+        <span data-lang="en">Copy the invitation</span>
+      </button>
+      <p class="copied" data-copied hidden>
+        <span data-lang="fr">Copiée. Elle est valable une seule fois.</span>
+        <span data-lang="en">Copied. It works once.</span>
+      </p>
+    </div>
+
+    <p class="missing" hidden>
+      <span data-lang="fr">Ce lien est incomplet. Demandez à la personne de vous en envoyer un nouveau depuis Cadentia.</span>
+      <span data-lang="en">This link is incomplete. Ask the person to send you a new one from Cadentia.</span>
+    </p>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="footlinks">
+      <a href="../privacy.html" data-lang="fr">Politique de confidentialité</a>
+      <a href="../privacy.html" data-lang="en">Privacy policy</a>
+      <a href="../terms.html" data-lang="fr">Conditions d’utilisation</a>
+      <a href="../terms.html" data-lang="en">Terms of use</a>
+    </div>
+  </div>
+</footer>
+
+<script src="../lang.js?v=2"></script>
+<script src="invite.js?v=1"></script>
+</body>
+</html>
