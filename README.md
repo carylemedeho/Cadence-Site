@@ -7,7 +7,6 @@ Static site for [Cadence](https://github.com/carylemedeho/Cadence), served by Gi
 | `index.html` | what the app is, what it tracks, what it deliberately does not do |
 | `privacy.html` | privacy policy — the URL App Store Connect asks for |
 | `terms.html` | terms of use |
-| `invite/` | landing page for a partner invitation link (`?token=`), copies the invitation to paste in the app |
 | `styles.css` | the app's own palette, type and radii, light and dark |
 | `lang.js` | the FR/EN toggle |
 
